@@ -1,0 +1,27 @@
+using System;
+
+namespace MyFirstApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double weigth;
+            weigth = 80;
+            double height = 1.73;
+            double bodyMassIndex = weigth / (height*height);
+            Console.WriteLine("Your BMI is " + bodyMassIndex + ".");
+
+            int carPrice;
+            carPrice = 20000;
+            int amountInWallet = 25000;
+            int moneyLeft = amountInWallet - carPrice;
+            Console.WriteLine("Ты купил машину за " + carPrice + " долларов, в твоем кошельке осталось " + moneyLeft + " долларов.");
+
+            int allLessons = 10;
+            int learnedLessons = 3;
+            int lessonsLeft = allLessons - learnedLessons;
+            Console.WriteLine("Тебе осталось выучить всего " + lessonsLeft + " уроков.");
+        }
+    }
+}
